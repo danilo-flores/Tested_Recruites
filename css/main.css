@@ -1,0 +1,62 @@
+body {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  margin: 0;
+}
+
+
+/* header */
+
+header {
+  width: 100%;
+  height: 100vh;
+  margin: 0 ;
+  background-image: url('../assets/header_bg.jpg');
+  background-size: cover;
+  background-blend-mode: lighten;
+  background-color: rgba(255,255,255,0.1);
+}
+
+header div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('../assets/header_bg.png');
+  background-size: cover;
+}
+
+header span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.25;
+  background-image: url('../assets/storm.png');
+  background-color: rgba(255,255,255,0.5);
+  background-size: cover;
+  background-blend-mode: lighten;
+}
+
+header h1 {
+  font-weight: lighter;
+  font-size: 15vmin;
+  position: absolute;
+  top: 15%;
+  left: 30%;
+  margin: 0;
+  background-image: linear-gradient(to bottom, #77664d, #0b0838);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: title_anim 1s;
+}
+
+
+/* animations */
+
+@keyframes title_anim {
+  from { opacity: 0; transform: translateY(100px); }
+  to { opacity: 1; transform: translateY(0); }
+}
